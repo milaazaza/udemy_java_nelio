@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class estruturaSequencialUm {
+
+	public static void main(String[] args) {
+		
+		Scanner leTeclado = new Scanner(System.in);
+
+		int a, b, soma;
+
+		a = leTeclado.nextInt();
+		b = leTeclado.nextInt();
+		soma = a + b;
+
+		System.out.println("SOMA = " + soma);
+
+		leTeclado.close();
+
+	}
+
+}
