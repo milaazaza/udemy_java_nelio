@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class estruturaSequencialCinco {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		int cod1, quant1, cod2, quant2;
+		double valor1, valor2, soma;
+
+		cod1 = sc.nextInt();
+		quant1 = sc.nextInt();
+		valor1 = sc.nextDouble();
+
+		cod2 = sc.nextInt();
+		quant2 = sc.nextInt();
+		valor2 = sc.nextDouble();
+
+		soma = (quant1 * valor1) + (quant2 * valor2);
+
+		System.out.printf("VALOR A PAGAR: R$ %.2f%n", soma);
+
+		sc.close();
+	}
+
+}
