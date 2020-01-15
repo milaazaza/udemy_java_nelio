@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class uri1134 {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		int alcool = 0;
+		int gasolina = 0;
+		int diesel = 0;
+
+		int escolha = sc.nextInt();
+
+		while (escolha != 4) {
+
+			if (escolha == 1) {
+				alcool = alcool + 1;
+
+			}
+
+			else if (escolha == 2) {
+				gasolina = gasolina + 1;
+
+			}
+
+			else if (escolha == 3) {
+				diesel = diesel + 1;
+
+			}
+
+			escolha = sc.nextInt();
+
+		}
+		System.out.println("MUITO OBRIGADO!");
+		System.out.println("alcool:" + alcool);
+		System.out.println("gasolina: " + gasolina);
+		System.out.println("diesel: " + diesel);
+
+	}
+}
