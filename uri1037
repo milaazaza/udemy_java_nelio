@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class uri1037 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+
+		double numero = sc.nextDouble();
+
+		String intervalo;
+		if (numero >= 0 && numero <= 25) {
+			intervalo = "(0,25]";
+
+		} else if (numero >= 25 && numero <= 50) {
+			intervalo = "(25,50]";
+
+		} else if (numero >= 50 && numero <= 75) {
+			intervalo = "(50,75]";
+		} else if (numero >= 75 && numero <= 100) {
+			intervalo = "(75,100]";
+		} else {
+			intervalo = "fora do intervalo";
+		}
+		System.out.println("intervalo: " + intervalo);
+
+		sc.close();
+	}
+
+}
